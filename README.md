@@ -6,6 +6,7 @@ Augustin-FL这位大牛，撰写教程并且耐心解答issue中的问题。
 # 正文
 Augustin-FL教程是关于2.5这个版本的pfsense，但是在 https://github.com/pfsense/pfsense 中是没有2.5这个版本的分支，因此如果完全照搬他教程的内容会失败，因此退一步，选择2.4.5这个版本，幸运的是FreeBSD-src和FreeBSD-ports都有2.4.5这个版本。
 查询下pfSense不同版本对应的FreeBSD，发现pfSense2.4.5对应的FreeBSD是11.3这个版本，此时如果你选择FreeBSD11.3后续会编译失败，原因出在某个ports的版本需要FreeBSD 12这个版本，不然会出错，可能这个地方是pfsense的作者的一个失误。
+![Disk partition](https://github.com/LCHOICEzz/build-yourself-firewall-from-pfsense-source-code/blob/master/images/Versions_of_pfSense_and_FreeBSD.png)
 国内用户最好不要在自己的机器上编译，抛开机器性能不说，GFW这个东西会影响你的fetch，导致你fetch超时，最终超时导致你build失败，所以最好选择VPS,日本、新加坡等亚洲地区即可。这里推荐我使用的https://my.vultr.com/ ，按小时收费，编译的机器内存不能低于8G，不然也会失败。
 
 ### FreeBSD Source
